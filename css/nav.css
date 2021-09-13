@@ -5,6 +5,9 @@
   border: none;
   background: transparent;
 }
+body {
+    background: #ddd;
+}
 
 .siteNav {
   height: 56px;
@@ -12,11 +15,55 @@
   display: flex;
   width: 100vw;
   align-items: center;
+  background: #fff;
 }
 
 .siteNav__logoLink {
     display: flex;
 
+}
+
+.siteNav .fas {
+    padding: 8px;
+    margin-right: 16px;
+}
+
+.siteNav .siteNav__searchInput {            /* specifity - inaczejnie adziała flexShrink na siteNav */
+    flex-shrink: 1;
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    padding: 0 5px;
+    min-width: 80px;
+    padding-right: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.siteNav__searchTrigger {
+    border: 1px solid #ddd;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background: #f4f4f4;
+    flex-shrink: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.siteNav__searchTrigger .fas {
+    padding: 0;
+    margin: 0;
+    align-self: center;
+}
+
+.siteNav .fas,
+.siteNav-searchInput {
+  font-size: 18px;
+}
+
+.siteNav > * {          /* każdy bezpośredni element siteNav nie będzie się kurczył */
+    flex-shrink: 0;
 }
 
 .siteNav__userActions {
@@ -32,59 +79,39 @@
   margin-right: 0;
 }
 
-.siteNav > * {          /* każdy bezpośredni element siteNav nie będzie się kurczył */
-  flex-shrink: 0;
-}
+.isUserAvatar::after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: rosybrown;
+    border-radius: 50%;
+  }
 
 .siteNav__searchWrapper {
-  margin: 0 56px;
+  margin: 0 50px;
   display: flex;
   flex-shrink: 1;
   flex-grow: 1;
-}
-
-.isUserAvatar::after {
-  content: "";
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background: rosybrown;
-  border-radius: 50%;
-}
-
-.siteNav .fas {
-  padding: 8px;
-  margin-right: 16px;
-}
-
-.siteNav .siteNav__searchInput {            /* specifity - inaczejnie adziała flexShrink na siteNav */
-  flex-shrink: 1;
-  flex-grow: 1;
-  border: 1px solid #ddd;
-  padding: 0 5px;
- 
-}
-
-.siteNav__searchTrigger {
-    border: 1px solid #ddd;
-    border-left: none;
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    background: #f4f4f4;
-}
-
-.siteNav__searchTrigger .fas {
-    padding: 0;
-    margin: 0;
-}
-
-.siteNav .fas,
-.siteNav-searchInput {
-  font-size: 18px;
-  padding: 8px;
+  min-width: 100px;
+  height: 30px;
 }
 
 .siteNav__searchBack {
-   align-self: center; 
+    display: none;
+    align-self: center;
+}
+
+.isMobileSearchTrigger {
+    display: none;
+}
+@media (max-width: 656px) {
+    .siteNav__searchBack,
+    .isMobileSearchTrigger {
+        display: block;
+
+    }
+    .siteNav__searchWrapper {
+        display: none;
+    }
 }
