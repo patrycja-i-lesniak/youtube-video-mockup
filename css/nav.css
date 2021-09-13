@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+}
+
+.siteNav {
+  height: 56px;
+  padding: 13px;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+}
+
+.siteNav__logoLink {
+    display: flex;
+
+}
+
+.siteNav__userActions {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+  align-items: center;
+  width: 250px;
+  justify-content: space-between;
+}
+
+.siteNav__userActions .fas {
+  margin-right: 0;
+}
+
+.siteNav > * {          /* każdy bezpośredni element siteNav nie będzie się kurczył */
+  flex-shrink: 0;
+}
+
+.siteNav__searchWrapper {
+  margin: 0 56px;
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.isUserAvatar::after {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: rosybrown;
+  border-radius: 50%;
+}
+
+.siteNav .fas {
+  padding: 8px;
+  margin-right: 16px;
+}
+
+.siteNav .siteNav__searchInput {            /* specifity - inaczejnie adziała flexShrink na siteNav */
+  flex-shrink: 1;
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  padding: 0 5px;
+ 
+}
+
+.siteNav__searchTrigger {
+    border: 1px solid #ddd;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    background: #f4f4f4;
+}
+
+.siteNav__searchTrigger .fas {
+    padding: 0;
+    margin: 0;
+}
+
+.siteNav .fas,
+.siteNav-searchInput {
+  font-size: 18px;
+  padding: 8px;
+}
+
+.siteNav__searchBack {
+   align-self: center; 
+}
