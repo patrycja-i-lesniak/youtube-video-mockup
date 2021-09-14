@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/flex.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
@@ -43,31 +42,26 @@
             <li class="siteNav__userActon">
                 <button class="siteNav__actionTrigger isMobileSearchTrigger">
                     <span class="fas fa-search"></span>
-
                 </button>
             </li>
             <li class="siteNav__userActon">
                 <button class="siteNav__actionTrigger">
                     <span class="fas fa-video"></span>
-
                 </button>
             </li>
             <li class="siteNav__userActon">
                 <button class="siteNav__actionTrigger">
                     <span class="fas fa-th"></span>
-
                 </button>
             </li>
-            <li class="siteNav__userActon">
+            <li class="siteNav__userActon isMobileHidden">
                 <button class="siteNav__actionTrigger">
-                    <span class="fas fa-comment"></span>
-
+                    <span class="fas fa-comment isMobileHidden"></span>
                 </button>
             </li>
-            <li class="siteNav__userActon">
+            <li class="siteNav__userActon isMobileHidden">
                 <button class="siteNav__actionTrigger">
                     <span class="fas fa-bell"></span>
-
                 </button>
             </li>
             <li class="siteNav__userActon">
@@ -76,6 +70,7 @@
         </ul>
 
     </nav>
+
     <header class="channelHeader">
         <img src="https://place-hold.it/728x127/d7a3a3/ffffff&text=SuperChannel" class="channelHeader__hero" alt="   ">
         <div class="channelHeader__details">
@@ -86,7 +81,7 @@
                 <span class="channelHeader__subsCount">123 456 subskrypcji</span>
             </div>
             <button class="channelHeader__subscribe">Subscribed 120 TYS</button>
-            <button class="channelHeader__bell fas fa-bell"></button>
+            <button class="channelHeader__bell fas fa-bell isMobileHidden"></button>
         </div>
         <nav class="channelHeader__nav">
             <button class="channelHeader__slideButton channelHeader__prev fas fa-chevron-left"></button>
@@ -111,10 +106,9 @@
                 </li>
             </ul>
             <button class="channelHeader__slideButton channelHeader__next fas fa-chevron-right"></button>
-
-
         </nav>
     </header>
+
     <main class="videoSection">
         <nav class="videoSection__nav">
             <label for="videoSection__filter" class="videoSection__label--primary">Przesłane filmy
@@ -318,10 +312,8 @@
                     </div>
                 </a>
             </li>
-
         </ul>
     </main>
-
 </body>
 
 </html>
