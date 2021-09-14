@@ -16,6 +16,9 @@ body {
   width: 100vw;
   align-items: center;
   background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .siteNav__logoLink {
@@ -55,8 +58,7 @@ body {
 .siteNav__searchTrigger .fas {
     padding: 0;
     margin: 0;
-    align-self: center;
-}
+    align-self: center;}
 
 .siteNav .fas,
 .siteNav-searchInput {
@@ -106,6 +108,7 @@ body {
 .isMobileSearchTrigger {
     display: none;
 }
+
 @media (max-width: 656px) {
     .siteNav__searchBack,
     .isMobileSearchTrigger {
@@ -114,5 +117,14 @@ body {
     }
     .siteNav__searchWrapper {
         display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .isMobileHidden {
+        display: none;
+    }
+    .siteNav__userAction {
+       width: 200px; 
     }
 }
