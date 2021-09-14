@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/flex.css">
     <link rel="stylesheet" href="css/nav.css">
-
+    <link rel="stylesheet" href="css/header.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Fake youtube</title>
@@ -23,7 +23,7 @@
         </button>
         <h1 class="siteNav__logoWrapper">
             <a href="#" class="siteNav__logoLink">
-                <img src="./assets/YouTube_Logo_2017.svg" width="80px" class="siteNav__logoImage">
+                <img src="./assets/YouTube_Logo_2017.svg" width="80px" class="siteNav__logoImage" alt="">
             </a>
         </h1>
         <div class="siteNav__searchWrapper">
@@ -75,6 +75,46 @@
         </ul>
 
     </nav>
+    <header class="channelHeader">
+        <img src="https://place-hold.it/728x127/d7a3a3/ffffff&text=SuperChannel" class="channelHeader__hero" alt="   ">
+        <div class="channelHeader__details">
+            <img src="https://place-hold.it/100x100/d7a3a3/ffffff&text=SuperChannel" class="channelHeader__avatar"
+                alt="avatar">
+            <div class="channelHeader__wrapper">
+                <span class="channelHeader__name">My channel</span>
+                <span class="channelHeader__subsCount">123 456 subskrypcji</span>
+            </div>
+            <button class="channelHeader__subscribe">Subscribed 120 TYS</button>
+            <button class="channelHeader__bell fas fa-bell"></button>
+        </div>
+        <nav class="channelHeader__nav">
+            <button class="channelHeader__slideButton channelHeader__prev fas fa-chevron-left"></button>
+            <ul class="channelHeader__tabs">
+                <li class="channelHeader__tab">
+                    <a href="#" class="channelHeader__link">główna</a>
+                </li>
+                <li class="channelHeader__tab">
+                    <a href="#" class="channelHeader__link channelHeader__link--active">wideo</a>
+                </li>
+                <li class="channelHeader__tab">
+                    <a href="#" class="channelHeader__link">playlisty</a>
+                </li>
+                <li class="channelHeader__tab">
+                    <a href="#" class="channelHeader__link">społeczność</a>
+                </li>
+                <li class="channelHeader__tab">
+                    <a href="#" class="channelHeader__link">kanały</a>
+                </li>
+                <li class="channelHeader__tab">
+                    <button class="channelHeader__searchButton fas fa-search"></button>
+                </li>
+            </ul>
+            <button class="channelHeader__slideButton channelHeader__next fas fa-chevron-right"></button>
+
+
+        </nav>
+    </header>
+
 </body>
 
 </html>
