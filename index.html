@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/flex.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Fake youtube</title>
@@ -114,6 +115,212 @@
 
         </nav>
     </header>
+    <main class="videoSection">
+        <nav class="videoSection__nav">
+            <label for="videoSection__filter" class="videoSection__label--primary">Przesłane filmy
+                <span class="fas fa-caret-down"></span>
+            </label>
+            <select id="videoSection__filter" name="videoFilter" class="videoSection__filter">
+                <option value="all">
+                    Wszystkie filmy
+                </option>
+                <option value="uploaded">
+                    Przesłane filmy
+                </option>
+                <option value="live">
+                    Transmisja na żywo
+                </option>
+            </select>
+            <button class="videoSection__playAll">Odtwórz wszystkie</button>
+
+            <label for="videoSection__sort" class="videoSection__label--secondary">
+                <span class="fas fa-align-left"></span>
+                Sortuj według
+            </label>
+            <select id="videoSection__sort" name="videoSort" class="videoSection__sort">
+                <option value="mostPopular">
+                    Najpopularniejsze
+                </option>
+                <option value="added-desc">
+                    Data dodania (od najstarszego)
+                </option>
+                <option value="added-asc">
+                    Data dodania (od najnowszego)
+                </option>
+            </select>
+        </nav>
+
+        <ul class="videoSection__list">
+            <li class="videoSection__video">
+                <a href="#" class="videoSection__videoLink">
+                    <div class="videoSection__thumbnail">
+                        <button class="videoSection__watchLater">
+                            <span class="fas fa-clock"></span>
+                        </button>
+                        <button class="videoSection__totalTime">12:33</button>
+                    </div>
+                    <h4 class="videoSection__videoName">Kurs CSS Flexbox
+                        <button class="videoSection__moreDetails">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="videoSection__details">6.9K wyświetleń, 2 lata temu</span>
+                    <div class="videoSection__badges">
+                        <span class="videoSection__badge">napisy</span>
+                        <span class="videoSection__badge">HD</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="videoSection__video">
+                <a href="#" class="videoSection__videoLink">
+                    <div class="videoSection__thumbnail">
+                        <button class="videoSection__watchLater">
+                            <span class="fas fa-clock"></span>
+                        </button>
+                        <button class="videoSection__totalTime">12:33</button>
+                    </div>
+                    <h4 class="videoSection__videoName">Kurs CSS Flexbox
+                        <button class="videoSection__moreDetails">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="videoSection__details">6.9K wyświetleń, 2 lata temu</span>
+                    <div class="videoSection__badges">
+                        <span class="videoSection__badge">napisy</span>
+                        <span class="videoSection__badge">HD</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="videoSection__video">
+                <a href="#" class="videoSection__videoLink">
+                    <div class="videoSection__thumbnail">
+                        <button class="videoSection__watchLater">
+                            <span class="fas fa-clock"></span>
+                        </button>
+                        <button class="videoSection__totalTime">12:33</button>
+                    </div>
+                    <h4 class="videoSection__videoName">Kurs CSS Flexbox
+                        <button class="videoSection__moreDetails">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="videoSection__details">6.9K wyświetleń, 2 lata temu</span>
+                    <div class="videoSection__badges">
+                        <span class="videoSection__badge">napisy</span>
+                        <span class="videoSection__badge">HD</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="videoSection__video">
+                <a href="#" class="videoSection__videoLink">
+                    <div class="videoSection__thumbnail">
+                        <button class="videoSection__watchLater">
+                            <span class="fas fa-clock"></span>
+                        </button>
+                        <button class="videoSection__totalTime">12:33</button>
+                    </div>
+                    <h4 class="videoSection__videoName">Kurs CSS Flexbox
+                        <button class="videoSection__moreDetails">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="videoSection__details">6.9K wyświetleń, 2 lata temu</span>
+                    <div class="videoSection__badges">
+                        <span class="videoSection__badge">napisy</span>
+                        <span class="videoSection__badge">HD</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="videoSection__video">
+                <a href="#" class="videoSection__videoLink">
+                    <div class="videoSection__thumbnail">
+                        <button class="videoSection__watchLater">
+                            <span class="fas fa-clock"></span>
+                        </button>
+                        <button class="videoSection__totalTime">12:33</button>
+                    </div>
+                    <h4 class="videoSection__videoName">Kurs CSS Flexbox
+                        <button class="videoSection__moreDetails">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="videoSection__details">6.9K wyświetleń, 2 lata temu</span>
+                    <div class="videoSection__badges">
+                        <span class="videoSection__badge">napisy</span>
+                        <span class="videoSection__badge">HD</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="videoSection__video">
+                <a href="#" class="videoSection__videoLink">
+                    <div class="videoSection__thumbnail">
+                        <button class="videoSection__watchLater">
+                            <span class="fas fa-clock"></span>
+                        </button>
+                        <button class="videoSection__totalTime">12:33</button>
+                    </div>
+                    <h4 class="videoSection__videoName">Kurs CSS Flexbox
+                        <button class="videoSection__moreDetails">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="videoSection__details">6.9K wyświetleń, 2 lata temu</span>
+                    <div class="videoSection__badges">
+                        <span class="videoSection__badge">napisy</span>
+                        <span class="videoSection__badge">HD</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="videoSection__video">
+                <a href="#" class="videoSection__videoLink">
+                    <div class="videoSection__thumbnail">
+                        <button class="videoSection__watchLater">
+                            <span class="fas fa-clock"></span>
+                        </button>
+                        <button class="videoSection__totalTime">12:33</button>
+                    </div>
+                    <h4 class="videoSection__videoName">Kurs CSS Flexbox
+                        <button class="videoSection__moreDetails">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="videoSection__details">6.9K wyświetleń, 2 lata temu</span>
+                    <div class="videoSection__badges">
+                        <span class="videoSection__badge">napisy</span>
+                        <span class="videoSection__badge">HD</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="videoSection__video">
+                <a href="#" class="videoSection__videoLink">
+                    <div class="videoSection__thumbnail">
+                        <button class="videoSection__watchLater">
+                            <span class="fas fa-clock"></span>
+                        </button>
+                        <button class="videoSection__totalTime">12:33</button>
+                    </div>
+                    <h4 class="videoSection__videoName">Kurs CSS Flexbox
+                        <button class="videoSection__moreDetails">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="videoSection__details">6.9K wyświetleń, 2 lata temu</span>
+                    <div class="videoSection__badges">
+                        <span class="videoSection__badge">napisy</span>
+                        <span class="videoSection__badge">HD</span>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </main>
 
 </body>
 

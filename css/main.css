@@ -1,0 +1,146 @@
+.videoSection {
+  background: #fff;
+  padding: 16px;
+}
+
+.videoSection__videoLink {
+  color: #000;
+}
+
+.videoSection__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.videoSection__label--primary {
+  color: #111;
+  font-size: 16px;
+}
+
+.videoSection__label--secondary,
+.videoSection__playAll {
+  color: #606060;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.videoSection__label .fas {
+  margin-right: 8px;
+}
+
+.videoSection__label--primary,
+.videoSection__playAll,
+.videoSection__label--secondary {
+  height: 36px;
+  padding: 10px 16px;
+}
+
+.videoSection__sort,
+.videoSection__filter {
+  display: none;
+}
+
+.videoSection__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.videoSection__video {
+    margin: 0 10px 20px 0;
+}
+
+.videoSection__videoLink {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  align-items: flex-start;
+}
+
+.videoSection__thumbnail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 118px;
+  background-image: url(https://place-hold.it/210x117/d7a3a3/ffffff&text=CssTutorial);
+}
+
+.videoSection__totalTime {
+  width: 40px;
+  height: 16px;
+  color: #fff;
+  margin: 4px;
+  padding: 2px 4px;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  border-radius: 2px;
+  line-height: 12px;
+  text-align: center;
+  opacity: 0.9;
+  margin-top: auto; /*by element zawsze był na dole nawet jak ikonka zegara znika*/
+}
+
+.videoSection__watchLater {
+  display: none;
+  margin: 4px;
+  font-size: 18px;
+  color: white;
+  background: #111;
+  width: 25px;
+  height: 25px;
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+.videoSection__videoLink:hover .videoSection__watchLater,
+.videoSection__videoLink:hover .videoSection__moreDetails {
+  display: block;
+}
+
+.videoSection__videoName {
+  color: #0a0a0a;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+  padding-right: 24px;
+  width: 100%;
+}
+
+.videoSection__moreDetails {
+  display: none;
+  color: #606060;
+  margin-left: auto;
+  font-size: 18px;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.8;
+}
+
+.videoSection__details {
+  font-size: 13px;
+  color: #606060;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.videoSection__badge {
+  min-width: 45px;
+  display: inline-block;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  color: #606060;
+  font-size: 12px;
+  min-height: 14px;
+  line-height: 14px;
+  margin-right: 5px;
+  padding: 3px;
+}
